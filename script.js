@@ -5,9 +5,9 @@ const inputFont = document.querySelector('#select-font')
 const showFont = document.querySelector('#show-font')
 const inputColor = document.querySelector('#input-color')
 const showColor = document.querySelector("#show-color")
-const inputBg = document.querySelector("input-bg-color")
-const showBg = document.querySelector("show-bg-color")
-
+const inputBg = document.querySelector("#input-bg-color")
+const showBg = document.querySelector("#show-bg-color")
+const inputText = document.querySelector("#enter-text")
 
 
 
@@ -45,7 +45,8 @@ function handleBG() {
 }
 
 function replace_text() {
-    var text = document.getElementById("enter-text").value
+    const text = inputText.value
+
     display.innerHTML = text
 }
 
@@ -53,3 +54,4 @@ inputSize.addEventListener('input', handleInput)
 inputFont.addEventListener('input', handleFont)
 inputColor.addEventListener('input', handleColor)
 inputBg.addEventListener('input', handleBG)
+inputText.addEventListener('input', replace_text)
