@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Anneka Curry - Final - WEB 1.0</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+
+<body class="row">
+    <div class="column-1">
+        <section id="student-info">
+            <h1>Anneka Curry</h1>
+            <p>My favorite color is pink, and I wear heeled boots.</p>
+        </section>
+
+        <section id="data-input">
+            <h1>Font Styler</h1>
+
+            <div>Font Size
+                <input id="input-size" type="number">
+            </div>
+
+            <div>Font Family
+                <select id="select-font">
+                    <option value="helvetica">Helvetica</option>
+                    <option value="arial">Arial</option>
+                    <option value="times-new-roman">Times New Roman</option>
+                    <option value="georgia">Georgia</option>
+                </select>
+            </div>
+
+            <div>Font Color
+                <input id="input-color" type="color" value="#000">
+            </div>
+
+            <div>Background Color
+                <input id="input-bg-color" type="color" value="#fff">
+            </div>
+
+            <div>Input Text
+                <textarea id="enter-text" oninput="replace_text()"></textarea>
+            </div>
+        </section>
+    </div>
+
+    <div class="column-2">
+        <section id="headline-display">
+            <h1 id="display">Sample Text</h1>
+        </section>
+
+        <section id="data-output">
+            <h1>Font Settings</h1>
+            <pre><code>.headline {
+                font-size: <span id="show-size">16</span>px;
+                font-family: <span id="show-font">Times</span>;
+                color: <span id="show-color">#000</span>;
+                background-color: <span id="show-bg-color">#fff</span>;
+            }</code></pre>
+        </section>
+    </div>
+    <footer>
+        <script src="script.js" type="module"></script>
+    </footer>
+    
+</body>
+</html>

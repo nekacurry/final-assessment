@@ -1,0 +1,29 @@
+.row {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.column-1, .column-2 {
+    margin: 2.5%;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+#data-input > div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    line-height: 150%;
+}
+
+#display {
+    text-align: center;
+}
+
+#headline-display, #data-input {
+    border-style: double;
+    padding: 10%;
+}
